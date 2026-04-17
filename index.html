@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lex & Fiscum | Finanzas, Economía y Asesoría Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .ad-placeholder { background: #f3f4f6; border: 2px dashed #d1d5db; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 0.875 rhem; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header / Navegación -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-800">LEX&FISCUM</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-blue-600 font-medium">Inicio</a>
+                    <a href="#economia" class="hover:text-blue-600 font-medium">Economía</a>
+                    <a href="#legal" class="hover:text-blue-600 font-medium">Legal</a>
+                    <a href="#calculadora" class="hover:text-blue-600 font-medium">Herramientas</a>
+                    <a href="#contacto" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Consultoría</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Espacio para Anuncio Superior (AdSense) -->
+    <div class="max-w-7xl mx-auto px-4 py-4">
+        <div class="ad-placeholder h-24 w-full">Espacio para Banner Publicitario (728x90)</div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative bg-blue-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Impulsa tu Libertad Financiera con Respaldo Legal</h1>
+                <p class="text-xl text-blue-100 mb-8">Análisis económico profundo, estrategias de inversión y asesoría legal especializada en un solo lugar.</p>
+                <div class="flex space-x-4">
+                    <a href="#legal" class="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Ver Servicios</a>
+                    <a href="#economia" class="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition">Leer Blog</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Imagen Placeholder -->
+                <div class="w-full h-64 bg-blue-800 rounded-2xl flex items-center justify-center border border-blue-700 shadow-2xl">
+                    <i class="fas fa-chart-line text-8xl opacity-20"></i>
+                    <p class="absolute text-sm italic">[Imagen de Análisis Financiero y Derecho]</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secciones de Contenido -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <!-- Categorías Principales -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-university"></i></div>
+                <h3 class="text-xl font-bold mb-3">Macroeconomía</h3>
+                <p class="text-gray-600">Análisis semanal de los mercados globales, inflación y tendencias del Banco Central.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-balance-scale"></i></div>
+                <h3 class="text-xl font-bold mb-3">Derecho Corporativo</h3>
+                <h3 class="text-xl font-bold mb-3">Asesoría Legal</h3>
+                <p class="text-gray-600">Protección patrimonial, contratos y cumplimiento normativo para empresas y autónomos.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-piggy-bank"></i></div>
+                <h3 class="text-xl font-bold mb-3">Finanzas Personales</h3>
+                <p class="text-gray-600">Guías prácticas para ahorrar, invertir en bolsa y gestionar deudas eficazmente.</p>
+            </div>
+        </section>
+
+        <!-- Blog / Artículos Recientes (Clave para SEO) -->
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-2/3">
+                <h2 class="text-3xl font-bold mb-8 border-l-4 border-blue-800 pl-4">Últimas Guías y Análisis</h2>
+                
+                <!-- Artículo 1 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm mb-8 flex flex-col md:flex-row border border-gray-100">
+                    <div class="md:w-1/3 bg-gray-200 h-48 md:h-auto relative">
+                        <p class="absolute inset-0 flex items-center justify-center text-xs text-gray-500">[Imagen de Impuestos]</p>
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <span class="text-blue-600 text-sm font-bold uppercase tracking-wider">Legal & Fiscal</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 hover:text-blue-800 cursor-pointer">Cómo optimizar tu declaración de impuestos este 2024</h3>
+                        <p class="text-gray-600 mb-4">Descubre las deducciones legales que podrías estar ignorando y reduce tu carga fiscal de forma legítima...</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span><i class="far fa-calendar-alt mr-2"></i>15 May, 2024</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-2"></i>Dr. Alberto Ruiz</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm mb-8 flex flex-col md:flex-row border border-gray-100">
+                    <div class="md:w-1/3 bg-gray-200 h-48 md:h-auto relative">
+                        <p class="absolute inset-0 flex items-center justify-center text-xs text-gray-500">[Imagen de Inversiones]</p>
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <span class="text-green-600 text-sm font-bold uppercase tracking-wider">Finanzas</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 hover:text-blue-800 cursor-pointer">Inversiones de Bajo Riesgo: Dónde poner tu dinero hoy</h3>
+                        <p class="text-gray-600 mb-4">Analizamos los Bonos del Tesoro, ETFs y Cuentas de Ahorro de alto rendimiento para proteger tu capital contra la inflación.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <span><i class="far fa-calendar-alt mr-2"></i>12 May, 2024</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-2"></i>Lic. María Elena Gil</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AdSense Inline -->
+                <div class="ad-placeholder h-32 w-full my-8">Anuncio In-Feed (Responsive)</div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <div class="bg-blue-50 p-6 rounded-xl mb-8">
+                    <h4 class="font-bold text-lg mb-4 text-blue-900">Newsletter Estratégica</h4>
+                    <p class="text-sm text-blue-800 mb-4">Recibe un resumen semanal de cambios legales y oportunidades financieras.</p>
+                    <input type="email" placeholder="Tu correo electrónico" class="w-full px-4 py-2 rounded-lg border border-blue-200 mb-3 outline-none focus:ring-2 focus:ring-blue-400">
+                    <button class="w-full bg-blue-800 text-white py-2 rounded-lg font-bold hover:bg-blue-900">Suscribirme Gratuitamente</button>
+                </div>
+
+                <div class="ad-placeholder h-64 w-full mb-8">Anuncio Sidebar (300x600)</div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h4 class="font-bold text-lg mb-4">Temas Populares</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm hover:bg-blue-100 cursor-pointer">Criptoactivos</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm hover:bg-blue-100 cursor-pointer">Sucesiones</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm hover:bg-blue-100 cursor-pointer">Hipotecas</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm hover:bg-blue-100 cursor-pointer">Startup Law</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm hover:bg-blue-100 cursor-pointer">Inflación</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Herramienta Interactiva: Calculadora de Interés Compuesto -->
+        <section id="calculadora" class="mt-16 bg-white p-10 rounded-2xl shadow-lg border border-blue-100">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-2">Simulador de Crecimiento Financiero</h2>
+                <p class="text-gray-600">Visualiza el poder del interés compuesto en tus ahorros.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Inversión Inicial ($)</label>
+                        <input type="number" id="principal" value="1000" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Aportación Mensual ($)</label>
+                        <input type="number" id="monthly" value="100" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Tasa de Interés Anual (%)</label>
+                        <input type="number" id="rate" value="8" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Tiempo (Años)</label>
+                        <input type="number" id="years" value="10" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                    </div>
+                    <button onclick="calculateInvestment()" class="w-full bg-blue-800 text-white py-3 rounded-lg font-bold hover:bg-blue-900 shadow-md">Calcular Proyección</button>
+                </div>
+                <div class="bg-blue-900 text-white p-8 rounded-xl flex flex-col justify-center items-center text-center">
+                    <h3 class="text-xl opacity-80 mb-2">Valor Estimado Final</h3>
+                    <p id="resultDisplay" class="text-5xl font-bold">$22,345.00</p>
+                    <p class="mt-4 text-sm text-blue-200">Basado en reinversión de dividendos bruta.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-gray-900 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <h4 class="text-white text-xl font-bold mb-6">LEX&FISCUM</h4>
+                <p class="text-sm leading-relaxed">Tu portal de confianza para la toma de decisiones informadas en el mundo de los negocios y el derecho.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Navegación</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Blog de Economía</a></li>
+                    <li><a href="#" class="hover:text-white transition">Asesoría Legal Online</a></li>
+                    <li><a href="#" class="hover:text-white transition">Calculadoras Gratuitas</a></li>
+                    <li><a href="#" class="hover:text-white transition">Glosario Financiero</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Legal</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Términos de Servicio</a></li>
+                    <li><a href="#" class="hover:text-white transition">Política de Cookies</a></li>
+                    <li><a href="#" class="hover:text-white transition">Aviso Legal</a></li>
+                    <li><a href="#" class="hover:text-white transition">Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="mt-6">
+                    <p class="text-xs text-gray-500 italic font-medium">Este sitio web proporciona información general y no constituye asesoría legal o financiera profesional personalizada.</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-center text-xs">
+            © 2024 Lex & Fiscum. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Lógica de la calculadora
+        function calculateInvestment() {
+            const p = parseFloat(document.getElementById('principal').value);
+            const monthly = parseFloat(document.getElementById('monthly').value);
+            const r = parseFloat(document.getElementById('rate').value) / 100 / 12;
+            const t = parseFloat(document.getElementById('years').value) * 12;
+
+            // Fórmula Interés Compuesto con depósitos mensuales
+            let total = p * Math.pow(1 + r, t);
+            for (let i = 1; i <= t; i++) {
+                total += monthly * Math.pow(1 + r, t - i);
+            }
+
+            document.getElementById('resultDisplay').innerText = 
+                new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(total);
+        }
+
+        // Navegación responsive
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            // Lógica simple para mostrar/ocultar menú en móvil (se puede expandir)
+            alert("Menú móvil activado");
+        });
+    </script>
+</body>
+</html>
